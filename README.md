@@ -1,5 +1,21 @@
 # pm2-syslog
 
+## Update
+
+- fixed timezone offset is not integrated in the event date
+- added feature custom server address, port, tag and facility
+
+## default conf
+
+- address = `localhost`
+- port = `514`
+- facility = `local0`
+- tag = `pm2`
+
+You can change them via `pm2 set pm2-syslog:[variable] [value]`
+
+---
+
 Redirect all logs of PM2 + Apps managed into `/var/log/syslog`
 
 ## Configure OS
