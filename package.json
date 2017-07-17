@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "ain2": "^2.0.0",
+    "ain2": "jeromevalentin/ain#master",
     "pm2": "latest",
     "pmx": "latest"
   },
