@@ -29,7 +29,7 @@ pm2.launchBus(function(err, bus) {
     });
 
     bus.on('log:err', function(data) {
-        logger.error('app=%s id=%s |stderr|%s', 
+        logger.error('app=%s,id=%s|stderr|%s', 
             data.process.name, 
             data.process.pm_id, 
             data.data
