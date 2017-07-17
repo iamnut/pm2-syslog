@@ -18,7 +18,7 @@
     }
   ],
   "config": {
-    "hostname": "localhost",
+    "address": "localhost",
     "port": "514",
     "facility": "local0",
     "tag": "pm2"

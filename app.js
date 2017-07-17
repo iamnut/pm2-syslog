@@ -12,7 +12,7 @@ pmx.initModule({}, function(err, conf){
 var logger = new SysLogger({
     tag: config.tag,
     facility: config.facility,
-    hostname: config.hostname,
+    address: config.address,
     port: parseInt(config.port)
 });
 
