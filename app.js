@@ -29,10 +29,18 @@ pm2.launchBus(function(err, bus) {
     });
 
     bus.on('log:err', function(data) {
-        logger.error('app=%s id=%s |stderr|%s', data.process.name, data.process.pm_id, data.data);
+        logger.error('app=%s id=%s |stderr|%s', 
+            data.process.name, 
+            data.process.pm_id, 
+            data.data
+        );
     });
 
     bus.on('log:out', function(data) {
-        logger.log('app:%s,id:%s|stdout|%s', data.process.name, data.process.pm_id, data.data);
+        logger.log('app=%s,id=%s|stdout|%s', 
+            data.process.name, 
+            data.process.pm_id, 
+            data.data
+        );
     });
 });
