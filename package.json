@@ -17,6 +17,12 @@
       "script": "app.js"
     }
   ],
+  "config": {
+    "hostname": "localhost",
+    "port": "514",
+    "facility": "local0",
+    "tag": "pm2"
+  },
   "author": "Alexandre Strzelewicz",
   "license": "MIT"
 }
